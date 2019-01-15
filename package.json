@@ -1,0 +1,29 @@
+{
+	"name": "apollo-query-gen",
+	"version": "0.1.1",
+	"description": "A tiny NPM package that reduces code overhead for writing Apollo Client queries, primarily in testing and front-end applications.",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "yarn run test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DanielCender/apollo-query-gen.git"
+	},
+	"keywords": [
+		"apollo",
+		"apollo-client",
+		"graphql",
+		"graphql-tag"
+	],
+	"author": "Daniel Cender",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/DanielCender/apollo-query-gen/issues"
+	},
+	"homepage": "https://github.com/DanielCender/apollo-query-gen#readme",
+	"dependencies": {
+		"graphql-tag": "^2.10.0",
+		"pluralize": "^7.0.0"
+	}
+}
