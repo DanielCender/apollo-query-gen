@@ -7,13 +7,11 @@ const pluralize = require('pluralize');
  * @returns {object} query - gql`` query object
  */
 module.exports = (model, returns) => {
-	const plural = pluralize.plural(model).toLocaleLowerCase();
-
 	let fields = `${returns.map(field => `${field}\n`)}`.replace(/,/gim, '');
 
 	const query = gql`
-	update($data: ${model}UpdateInput!, $where: ${model}WhereInput!) {
-		${plural}(data: $data, where: $where) {
+	update($data: ${model}UpdateInput!, $where: ${model}WhereUniqueInput!) {
+		update${model}(data: $data, where: $where) {
 			${fields}
 		}
 	}
