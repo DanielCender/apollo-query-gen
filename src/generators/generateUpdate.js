@@ -10,7 +10,7 @@ module.exports = (model, returns) => {
 	let fields = `${returns.map(field => `${field}\n`)}`.replace(/,/gim, '');
 
 	const query = gql`
-	update($data: ${model}UpdateInput!, $where: ${model}WhereUniqueInput!) {
+	mutation($data: ${model}UpdateInput!, $where: ${model}WhereUniqueInput!) {
 		update${model}(data: $data, where: $where) {
 			${fields}
 		}
