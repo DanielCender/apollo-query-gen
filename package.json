@@ -1,6 +1,6 @@
 {
 	"name": "apollo-query-gen",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "A tiny NPM package that reduces code overhead for writing Apollo Client queries, primarily in testing and front-end applications.",
 	"main": "src/index.js",
 	"scripts": {
